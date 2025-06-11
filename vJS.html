@@ -83,55 +83,55 @@
         };
         
         const files = {
-            get(file, notFoundError) {
-                addAction({action: "get", file, notFoundError})
-            },
-            open(file) {
-                addAction({action: "open", file})
-            },
-            saveWhere(file, overwrite) {
-                addAction({action: "saveWhere", file, overwrite})
-            },
-            save(file, path, overwrite) {
-                addAction({action: "save", file, overwrite})
-            },
-            rename(file, name) {
-                addAction({action: "rename", file, name})
-            },
-            select(multiple) {
-                addAction({action: "select", multiple})
-            },
-            selectFolders(multiple) {
-                addAction({action: "select", multiple})
-            },
-            delete(file) {
-                addAction({action: "delete", file})
-            },
-            linkTo(file) {
-                addAction({action: "linkTo", file})
-            },
-            createFolder(path) {
-                addAction({action: "createFolder", path})
-            },
-            getFolderContents(folder, recursive) {
-                addAction({action: "getFolderContents", folder, recursive})
-            },
-            overwrite(file, newFile) {
-                addAction({action: "overwrite", file, newFile})
-            },
-            zip(file, name) {
-                addAction({action: "zip", file, name})
-            },
-            unzip(file) {
-                addAction({action: "unzip", file})
-            },
-            getDetail(file, detail) {
-                addAction({action: "getDetail", file, detail})
-            },
-            sort(files, by) {
-                addAction({action: "sort", files, by})
-            }
-        }
+	    get(file, notFoundError) {
+	        addAction({action: "get", file, notFoundError})
+	    },
+	    open(file) {
+	        addAction({action: "open", file})
+	    },
+	    saveWhere(file, overwrite) {
+	        addAction({action: "saveWhere", file, overwrite})
+	    },
+	    save(file, path, overwrite) {
+	        addAction({action: "save", file, path, overwrite})
+	    },
+	    rename(file, name) {
+	        addAction({action: "rename", file, name})
+	    },
+	    select(multiple) {
+	        addAction({action: "select", multiple})
+	    },
+	    selectFolders(multiple) {
+	        addAction({action: "selectFolders", multiple})
+	    },
+	    delete(file) {
+	        addAction({action: "delete", file})
+	    },
+	    linkTo(file) {
+	        addAction({action: "linkTo", file})
+	    },
+	    createFolder(path) {
+	        addAction({action: "createFolder", path})
+	    },
+	    getFolderContents(folder, recursive) {
+	        addAction({action: "getFolderContents", folder, recursive})
+	    },
+	    overwrite(file, newFile) {
+	        addAction({action: "overwrite", file, newFile})
+	    },
+	    zip(file, name) {
+	        addAction({action: "zip", file, name})
+	    },
+	    unzip(file) {
+	        addAction({action: "unzip", file})
+	    },
+	    getDetail(file, detail) {
+	        addAction({action: "getDetail", file, detail})
+	    },
+	    sort(files, by) {
+	        addAction({action: "sort", files, by})
+	    }
+	}
     </script>
     <script>
 	  scr
