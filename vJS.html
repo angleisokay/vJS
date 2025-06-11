@@ -102,34 +102,34 @@
                 addAction({action: "select", multiple})
             },
             selectFolders(multiple) {
-                addAction({addAction: "select", multiple})
+                addAction({action: "select", multiple})
             },
             delete(file) {
-                addAction({addAction: "delete", file})
+                addAction({action: "delete", file})
             },
             linkTo(file) {
-                addAction({addAction: "linkTo", file})
+                addAction({action: "linkTo", file})
             },
             createFolder(path) {
-                addAction({addAction: "createFolder", path})
+                addAction({action: "createFolder", path})
             },
             getFolderContents(folder, recursive) {
-                addAction({addAction: "getFolderContents", folder, recursive})
+                addAction({action: "getFolderContents", folder, recursive})
             },
             overwrite(file, newFile) {
-                addAction({addAction: "overwrite", file, newFile})
+                addAction({action: "overwrite", file, newFile})
             },
             zip(file, name) {
-                addAction({addAction: "zip", file, name})
+                addAction({action: "zip", file, name})
             },
             unzip(file) {
-                addAction({addAction: "unzip", file})
+                addAction({action: "unzip", file})
             },
             getDetail(file, detail) {
-                addAction({addAction: "getDetail", file, detail})
+                addAction({action: "getDetail", file, detail})
             },
             sort(files, by) {
-                addAction({addAction: "sort", files, by})
+                addAction({action: "sort", files, by})
             }
         }
     </script>
