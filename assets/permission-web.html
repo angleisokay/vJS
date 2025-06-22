@@ -1,52 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>button glow up</title>
+  <title>vJS Permissions</title>
   <style>
     body {
       background-color: #383838;
-      color: white;
+      margin: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
+      align-items: flex-start;
+      min-height: 100vh;
+      color: white;
       font-family: 'SF Pro', sans-serif;
+      user-select: none;
+    }
+    .container {
+      position: relative;
+      width: 847px;
+      height: 606px;
+      margin-top: 180px;
+    }
+    .logo {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      left: 558px;
+      top: 0;
+    }
+    .permissionsText {
+      position: absolute;
+      width: 847px;
+      height: 120px;
+      left: 0;
+      top: 310px;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 60px;
+      text-align: center;
+      color: white;
+      text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.25),
+        -2px -2px 4px rgba(0, 0, 0, 0.25);
     }
     .button {
+      position: absolute;
       width: 660px;
       height: 120px;
+      left: 353px;
+      top: 486px;
       background: linear-gradient(
         180deg,
         rgba(97, 250, 255, 0.49) 0%,
         rgba(58, 181, 185, 0.26) 80%,
         rgba(54, 147, 151, 0.18) 100%
       );
-      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25),
-                  -4px -4px 10px rgba(0, 0, 0, 0.25);
+      box-shadow:
+        4px 4px 10px rgba(0, 0, 0, 0.25),
+        -4px -4px 10px rgba(0, 0, 0, 0.25);
       border-radius: 350px;
       border: none;
-      color: white;
-      font-size: 50px;
-      font-weight: 510;
-      line-height: 60px;
-      text-align: center;
       cursor: pointer;
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
       transition: all 0.3s ease;
+      color: white;
+      font-weight: 510;
+      font-size: 50px;
+      line-height: 60px;
+      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
+      user-select: none;
     }
     .button:hover {
       opacity: 0.9;
     }
+    .buttonText {
+      position: absolute;
+      width: 473px;
+      height: 60px;
+      left: 446px;
+      top: 497px;
+      font-weight: 510;
+      font-size: 50px;
+      line-height: 60px;
+      text-align: center;
+      color: white;
+      pointer-events: none;
+      user-select: none;
+    }
+    .bottomText {
+      position: absolute;
+      width: 567px;
+      height: 48px;
+      left: 402px;
+      top: 782px;
+      font-weight: 274;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      color: white;
+      text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.25),
+        -2px -2px 4px rgba(0, 0, 0, 0.25);
+      user-select: none;
+    }
   </style>
 </head>
 <body>
-  <button class="button">Conceder permissões</button>
+  <div class="container">
+    <img src="https://raw.githubusercontent.com/angleisokay/vJS/refs/heads/main/assets/logo.svg" alt="vJS Logo" class="logo" />
+    <p class="permissionsText">Este ambiente web quer permissões: • Acesso ao sistema</p>
+    <button class="button">Conceder permissões</button>
+    <p class="bottomText">Toque no botão “OK” para cancelar</p>
+  </div>
 </body>
 </html>
